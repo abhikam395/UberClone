@@ -1,0 +1,12 @@
+{
+  "name": "uberclone",
+  "displayName": "uberclone",
+  "expo": {
+    "name": "uberclone",
+    "slug": "uberclone",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
