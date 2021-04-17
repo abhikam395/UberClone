@@ -21,11 +21,17 @@ export default class LoginScreen extends Component{
         super();
         this.onBackPress = this.onBackPress.bind(this);
         this.navToSocialMediaScreen = this.navToSocialMediaScreen.bind(this);
+        this.navToCodeConfirmScreen = this.navToCodeConfirmScreen.bind(this);
     }
 
     navToSocialMediaScreen(){
         let {navigation} = this.props;
         navigation.navigate('SocialMedia');
+    }
+
+    navToCodeConfirmScreen(){
+        let {navigation} = this.props;
+        navigation.navigate('CodeConfirm');
     }
 
     onBackPress(){
@@ -65,7 +71,7 @@ export default class LoginScreen extends Component{
                 </Text>
                 <TouchableOpacity 
                     style={styles.buttonContainer} 
-                    onPress={this.onClick}>
+                    onPress={this.navToCodeConfirmScreen}>
                    <Text style={styles.tint}>Next</Text>
                </TouchableOpacity>
             </SafeAreaView>
